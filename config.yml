@@ -1,0 +1,16 @@
+title: Odin
+description: Uhuhuy
+template:
+  repo: odin-template
+  name: odin
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
